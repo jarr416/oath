@@ -1,10 +1,10 @@
-# Django settings for oauth project.
+# Django settings for oath project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('nhumrich', 'nick.humrich@gmail.com'),
+    # ('Your Name', 'your_email@example.com'),
 )
 
 MANAGERS = ADMINS
@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': './db.sqlite',                      # Or path to database file if using sqlite3.
+        'NAME': './oath.sqlite',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '(lovgqvp2m_kc_)5jzgqk&=y4a)d2v*n_scjn2!i5+=(@3i4nz'
+SECRET_KEY = 'ddsb9z6&5fiq*5t!=%59@2s9+60tiftu8j(-6!_fta$8umn)j5'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -102,10 +102,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'oauth.urls'
+ROOT_URLCONF = 'oath.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'oauth.wsgi.application'
+WSGI_APPLICATION = 'oath.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".

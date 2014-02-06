@@ -1,14 +1,12 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import logout, login, authenticate
-from lab2.models import user
 from django.contrib.auth.models import User
 from django.shortcuts import render_to_response, render, redirect
 from django.contrib.auth.forms import UserCreationForm
-from django.core.context_processors import csrf
 from django.template import RequestContext
 from django import forms
 import foursquare
-from models import foursquareInfo
+from lab2.models import foursquareInfo
 
 def index(request):
     allUsers = User.objects.all()

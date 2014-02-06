@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8b4ebd1-3905-4f37-a5e6-ef53d617e794" name="Default" comment="" />
+    <list default="true" id="b8b4ebd1-3905-4f37-a5e6-ef53d617e794" name="Default" comment="fixed settings">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oath/settings.py" afterPath="$PROJECT_DIR$/oath/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/views.py" afterPath="$PROJECT_DIR$/lab2/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="oath.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +31,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="7" column="6" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -35,18 +40,25 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="35" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1335">
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
+            <state line="4" column="54" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oath/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="36" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oath/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="6" selection-start="3320" selection-end="3326" vertical-scroll-proportion="0.0" vertical-offset="1147" max-vertical-offset="2475">
+            <state line="137" column="17" selection-start="4925" selection-end="4925" vertical-scroll-proportion="2.8443115" vertical-offset="630" max-vertical-offset="2475">
               <folding />
             </state>
           </provider>
@@ -88,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oath/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="15" selection-start="619" selection-end="619" vertical-scroll-proportion="0.25301206" vertical-offset="0" max-vertical-offset="830">
+            <state line="15" column="15" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -113,6 +125,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -125,8 +145,9 @@
         <option value="$PROJECT_DIR$/foursquare/templates/registration/register.html" />
         <option value="$PROJECT_DIR$/foursquare/models.py" />
         <option value="$PROJECT_DIR$/foursquare/views.py" />
-        <option value="$PROJECT_DIR$/lab2/views.py" />
         <option value="$PROJECT_DIR$/oath/urls.py" />
+        <option value="$PROJECT_DIR$/oath/settings.py" />
+        <option value="$PROJECT_DIR$/lab2/views.py" />
       </list>
     </option>
   </component>
@@ -135,7 +156,7 @@
     <option name="width" value="1017" />
     <option name="height" value="1002" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -362,24 +383,55 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b8b4ebd1-3905-4f37-a5e6-ef53d617e794" name="Default" comment="" />
       <created>1391104111398</created>
       <updated>1391104111398</updated>
     </task>
+    <task id="LOCAL-00001" summary="fixed settings">
+      <created>1391702896636</created>
+      <updated>1391702896636</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed settings">
+      <created>1391703011782</created>
+      <updated>1391703011782</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed settings">
+      <created>1391704492348</created>
+      <updated>1391704492348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1017" height="1002" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20591132" sideWeight="0.67007965" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20591132" sideWeight="0.67007965" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -400,18 +452,13 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="fixed settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lab2/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab2/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="7" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
@@ -466,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oath/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="6" selection-start="3320" selection-end="3326" vertical-scroll-proportion="0.0" vertical-offset="1147" max-vertical-offset="2475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab2/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="7" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="375">
@@ -494,25 +534,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oath/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="36" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab2/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="7" column="6" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="35" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1335">
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state line="4" column="54" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oath/urls.py">
+    <entry file="file://$PROJECT_DIR$/oath/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="619" selection-end="619" vertical-scroll-proportion="0.25301206" vertical-offset="0" max-vertical-offset="830">
+        <state line="137" column="17" selection-start="4925" selection-end="4925" vertical-scroll-proportion="2.8443115" vertical-offset="630" max-vertical-offset="2475">
           <folding />
         </state>
       </provider>
