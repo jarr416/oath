@@ -45,7 +45,7 @@ def register(request):
 def newClient():
     return foursquare.Foursquare(client_id='TF2MTI1FCUBHOV1EHJUDV42XT0M3QR2KXAUBSAXNIRHTJHIO',
                                client_secret='GAU0OYF2DUJQQ3VWVVB5GMUGAWIIV0L0WD434GHQXEWNKM4R',
-                               redirect_uri='ec2-54-202-45-161.us-west-2.compute.amazonaws.com/oath/redirect')
+                               redirect_uri='http://ec2-54-202-45-161.us-west-2.compute.amazonaws.com/oath/redirect')
 
 def handle_oauth(request):
     code = request.GET.get('code', None)
