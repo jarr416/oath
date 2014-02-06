@@ -97,6 +97,7 @@ def profile(request, username):
                  output += '<br>Location: ' + str(x['venue']['name']) +\
                         ' <br>ShoutOut: ' + str(x['shout']) +\
                         ' <br>Total Checkins: ' + str(x['venue']['stats']['checkinsCount'])
+                 output += '<br>'
         else:
             output = 'No account connected. <a href=\"/oauth/start\">Click here to link accounts</a>'
 
