@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.template import RequestContext
 from django import forms
 import foursquare
-from lab2.models import foursquareInfo
+from lab2.models import foursquareinfo
 
 def index(request):
     allUsers = User.objects.all()
@@ -54,7 +54,7 @@ def handle_oauth(request):
     client.set_access_token(access_token)
     user = client.users()['user']
     userId = request.user.id
-    a = foursquareInfo(user_id=userId, access_token=code, fs_id=user['id'])
+    a = foursquareinfo(user_id=userId, access_token=code, fs_id=user['id'])
     a.save()
     return HttpResponseRedirect("/profile/" + str(userId))
 
@@ -67,13 +67,13 @@ def link_oauth(request):
 
 
 def userClient(username):
-    access = foursquareInfo.objects.filter(username=username)[0].access_token
+    access = foursquareinfo.objects.filter(username=username)[0].access_token
     return foursquare.Foursquare(access_token=access)
 
 
 def profile(request, username):
     output = ""
-    a = foursquareInfo.objects.filter(username=username)
+    a = foursquareinfo.objects.filter(username=username)
     if (not request.user.is_authenticated()) or (request.user.is_authenticated and request.user.username != username):
         if len(a) > 0 :
             client = userClient(username)

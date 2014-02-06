@@ -30,7 +30,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="7" column="12" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -39,7 +39,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab2/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="65" selection-start="3521" selection-end="3521" vertical-scroll-proportion="0.516129" vertical-offset="1108" max-vertical-offset="1635">
+            <state line="10" column="19" selection-start="429" selection-end="429" vertical-scroll-proportion="0.2994012" vertical-offset="0" max-vertical-offset="1635">
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/foursquare/views.py" />
         <option value="$PROJECT_DIR$/oath/urls.py" />
         <option value="$PROJECT_DIR$/oath/settings.py" />
-        <option value="$PROJECT_DIR$/lab2/models.py" />
         <option value="$PROJECT_DIR$/lab2/views.py" />
+        <option value="$PROJECT_DIR$/lab2/models.py" />
       </list>
     </option>
   </component>
@@ -448,7 +448,19 @@
       <created>1391706314811</created>
       <updated>1391706314811</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed settings">
+      <created>1391707434521</created>
+      <updated>1391707434521</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed settings">
+      <created>1391707730150</created>
+      <updated>1391707730150</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixed settings">
+      <created>1391707773809</created>
+      <updated>1391707773809</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,14 +599,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="7" column="12" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="65" selection-start="3521" selection-end="3521" vertical-scroll-proportion="0.516129" vertical-offset="1108" max-vertical-offset="1635">
+        <state line="10" column="19" selection-start="429" selection-end="429" vertical-scroll-proportion="0.2994012" vertical-offset="0" max-vertical-offset="1635">
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
