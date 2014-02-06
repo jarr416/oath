@@ -66,18 +66,38 @@ def link_oauth(request):
 
 
 
-def userClient(userId):
-    access = foursquareInfo.objects.filter(user_id=userId)[0].access_token
+def userClient(username):
+    access = foursquareInfo.objects.filter(username=username)[0].access_token
     return foursquare.Foursquare(access_token=access)
 
 
 def profile(request, username):
     output = ""
-    if request.user.is_authenticated() and request.user.username == username:
-        output += "This is your profile Page"
-
-
-
-    output += '<br><a href="/oauth/start">Link Account to FourSquare</a><br>'
+    a = foursquareInfo.objects.filter(username=username)
+    if (not request.user.is_authenticated()) or (request.user.is_authenticated and request.user.username != username):
+        if len(a) > 0 :
+            client = userClient(username)
+            checkin = client.users.checkins()['checkins']['items']
+            output += "<br> Last Checkout : "
+            if len(checkin) > 0:
+                x = checkin[0]
+                output += '<br>Location: ' + str(x['venue']['name']) +\
+                        ' <br>ShoutOut: ' + str(x['shout']) +\
+                        ' <br>Total Checkins: ' + str(x['venue']['stats']['checkinsCount'])
+        else:
+            output += '<br> He has not gone anywhere yet yet'
+    else :
+        output += "This is your profile Page<br>"
+        if (len(a) > 0):
+            client = userClient(username)
+            checks = client.users.checkins()['checkins']['items']
+            body = "Full profile. Code = " + a[0].access_token
+            output += '<br>Checkins: <br>'
+            for x in checks:
+                 output += '<br>Location: ' + str(x['venue']['name']) +\
+                        ' <br>ShoutOut: ' + str(x['shout']) +\
+                        ' <br>Total Checkins: ' + str(x['venue']['stats']['checkinsCount'])
+        else:
+            output = 'No account connected. <a href=\"/oauth/start\">Click here to link accounts</a>'
 
     return HttpResponse("You're looking at the profile of " + username + "<br>" + output  )
