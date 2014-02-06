@@ -53,10 +53,10 @@ def handle_oauth(request):
     access_token = client.oauth.get_token(code)
     client.set_access_token(access_token)
     user = client.users()['user']
-    userId = request.user.id
-    a = foursquareinfo(user_id=userId, access_token=code, fs_id=user['id'])
+    username = request.user.username
+    a = foursquareinfo(username=username, access_token=code, fs_id=user['id'])
     a.save()
-    return HttpResponseRedirect("/profile/" + str(userId))
+    return HttpResponseRedirect("/profile/" + str(username))
 
 
 def link_oauth(request):
@@ -75,7 +75,7 @@ def profile(request, username):
     output = ""
     a = foursquareinfo.objects.filter(username=username)
     if (not request.user.is_authenticated()) or (request.user.is_authenticated and request.user.username != username):
-        if len(a) > 0 :
+        if len(a) > 0:
             client = userClient(username)
             checkin = client.users.checkins()['checkins']['items']
             output += "<br> Last Checkout : "
