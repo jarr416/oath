@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b4ebd1-3905-4f37-a5e6-ef53d617e794" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/views.py" afterPath="$PROJECT_DIR$/lab2/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="oath.iws" />
@@ -434,7 +433,11 @@
       <created>1391706098890</created>
       <updated>1391706098890</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed settings">
+      <created>1391706213169</created>
+      <updated>1391706213169</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
