@@ -16,13 +16,13 @@ def index(request):
     else :
         output = 'You are Not Currently Logged In'
 
-    output += '<br><br><a href="http://127.0.0.1:8000/login/">Login</a><br>'
-    output += '<a href="http://127.0.0.1:8000/logout/">Logout</a><br>'
-    output += '<a href="http://127.0.0.1:8000/register/">Sign Up</a><br>'
+    output += '<br><br><a href="/login/">Login</a><br>'
+    output += '<a href="/logout/">Logout</a><br>'
+    output += '<a href="/register/">Sign Up</a><br>'
 
     output += '<br>All Accounts <br>'
     for u in allUsers  :
-        output += '<br><a href="http://127.0.0.1:8000/profile/' + u.username + '"/>' + u.username + '</a>'
+        output += '<br><a href="/profile/' + u.username + '"/>' + u.username + '</a>'
 
     return HttpResponse(output)
 
@@ -76,6 +76,6 @@ def profile(request, username):
 
 
 
-    output += '<br><a href="http://127.0.0.1:8000/Oath/">Link Account to FourSquare</a><br>'
+    output += '<br><a href="/oath/start">Link Account to FourSquare</a><br>'
 
     return HttpResponse("You're looking at the profile of " + username + "<br>" + output  )
