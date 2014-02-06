@@ -42,6 +42,11 @@ def register(request):
     c = {'form': form}
     return render_to_response("registration/register.html", c, context_instance=RequestContext(request))
 
+def newClient():
+    return foursquare.Foursquare(client_id='TF2MTI1FCUBHOV1EHJUDV42XT0M3QR2KXAUBSAXNIRHTJHIO',
+                               client_secret='GAU0OYF2DUJQQ3VWVVB5GMUGAWIIV0L0WD434GHQXEWNKM4R',
+                               redirect_uri='ec2-54-202-45-161.us-west-2.compute.amazonaws.com/oath/redirect')
+
 def handle_oauth(request):
     code = request.GET.get('code', None)
     client = newClient()
@@ -55,14 +60,11 @@ def handle_oauth(request):
 
 
 def link_oauth(request):
-    client = newClient();
+    client = newClient()
     auth_uri = client.oauth.auth_url()
     return HttpResponseRedirect(auth_uri)
 
-def newClient():
-    return foursquare.Foursquare(client_id='TF2MTI1FCUBHOV1EHJUDV42XT0M3QR2KXAUBSAXNIRHTJHIO',
-                               client_secret='GAU0OYF2DUJQQ3VWVVB5GMUGAWIIV0L0WD434GHQXEWNKM4R',
-                               redirect_uri='ec2-54-202-45-161.us-west-2.compute.amazonaws.com/oath/redirect')
+
 
 def userClient(userId):
     access = foursquareInfo.objects.filter(user_id=userId)[0].access_token
@@ -70,7 +72,7 @@ def userClient(userId):
 
 
 def profile(request, username):
-    output = "";
+    output = ""
     if request.user.is_authenticated() and request.user.username == username:
         output += "This is your profile Page"
 
