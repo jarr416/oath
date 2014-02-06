@@ -64,7 +64,7 @@ def link_oauth(request):
 def newClient():
     return foursquare.Foursquare(client_id='TF2MTI1FCUBHOV1EHJUDV42XT0M3QR2KXAUBSAXNIRHTJHIO',
                                client_secret='GAU0OYF2DUJQQ3VWVVB5GMUGAWIIV0L0WD434GHQXEWNKM4R',
-                               redirect_uri='http://ec2-54-211-69-191.compute-1.amazonaws.com/oath/redirect')
+                               redirect_uri='ec2-54-202-45-161.us-west-2.compute.amazonaws.com/oath/redirect')
 
 def userClient(userId):
     access = foursquareInfo.objects.filter(user_id=userId)[0].access_token
