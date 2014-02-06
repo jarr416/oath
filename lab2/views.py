@@ -28,7 +28,7 @@ def index(request):
 
 def logout_view(request):
     logout(request)
-    return HttpResponse("You have been logged out")
+    return HttpResponse('You have been logged out! <br> <a href="/">Home Page</a><br>')
 
 
 def register(request):
@@ -100,4 +100,4 @@ def profile(request, username):
         else:
             output = 'No account connected. <a href=\"/oauth/start\">Click here to link accounts</a>'
 
-    return HttpResponse("You're looking at the profile of " + username + "<br>" + output  )
+    return HttpResponse("You're looking at the profile of " + username + "<br>" + output + '<br> <a href="/">Home Page</a><br>')
