@@ -76,6 +76,6 @@ def profile(request, username):
 
 
 
-    output += '<br><a href="/oath/start">Link Account to FourSquare</a><br>'
+    output += '<br><a href="/oauth/start">Link Account to FourSquare</a><br>'
 
     return HttpResponse("You're looking at the profile of " + username + "<br>" + output  )
