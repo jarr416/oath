@@ -1,0 +1,4 @@
+from foursquare.models import foursquare
+from django.contrib import admin
+
+admin.site.register(foursquare)

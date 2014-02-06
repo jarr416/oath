@@ -1,0 +1,7 @@
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, world. Jared Yarns Foursquare App.")
+
+def detail(request, user_id):
+    return HttpResponse("You're looking at User %s profile." % user_username)
