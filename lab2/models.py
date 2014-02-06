@@ -5,7 +5,7 @@ class user(models.Model):
     username = models.CharField(max_length=200)
     password = models.CharField(max_length=200)
 
-class foursquareInf(models.Model):
+class foursquareInfo(models.Model):
     username = models.CharField(max_length=200)
     access_token = models.CharField(max_length=200)
     fs_id = models.CharField(max_length=200)
